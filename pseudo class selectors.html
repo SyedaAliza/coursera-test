@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>Pseudo Class Selector</title>
+        <style>
+            header li {
+                list-style: none;
+            }
+            a:any-link, a:visited {
+                text-decoration: none;
+                color: crimson;
+                background-color: darkgoldenrod;
+                border: 1px solid blue;
+                display: block;
+                width: 200px;
+                text-align: center;
+                margin-bottom: 1px;
+            }
+            a:hover, a:active {
+                background-color: burlywood;
+                color: darkmagenta;
+            }
+            header li:nth-child(2) {
+                font-style: italic;
+                font-size: 24px;
+            }
+            section div:nth-child(8):hover {
+                background-color: darkseagreen;
+                cursor: pointer;
+            }
+            section div:nth-child(even) {
+                background-color: darkslategrey;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.coursera.org/" target="_blank">Go to coursera!</a></li>
+                <li><a href="https://www.facebook.com/alizay.khan.79677471/" target="_blank">Welcome To My Facebook Page!</a></li>
+            </ul>
+        </header>
+        <section>
+            <div>I love Apple</div>
+            <div>I love Mango</div> 
+            <div>I love Fig</div>
+            <div>I love Dates</div>
+            <div>I love Grapes</div>
+            <div>I love Pomegrante</div>
+            <div>I love Stawberries</div>
+            <div>I love Guavas</div>
+            <div>I love butter</div>
+            <div>I love Watermelon</div>
+        </section>
+    </body>
+</html>
